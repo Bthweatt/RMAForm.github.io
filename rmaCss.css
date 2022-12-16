@@ -1,0 +1,259 @@
+.rma-rendered-form * {
+    box-sizing: border-box;
+}
+.rma-inner-form {
+    background: transparent;
+    max-width: 600px;
+    border: solid;
+    border-width: 2px;
+    border-color: #c7c7c7;
+    border-radius: 1px;
+    padding: 35px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0 auto;
+    color: #000;
+}
+.rma-rendered-form .form-group {
+    margin-left: 0px;
+    margin-bottom: 15px;
+}
+.form-elements, .form-group, .multi-row span, textarea {
+    display: block;
+}
+.rma-rendered-form label {
+    font-weight: normal;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    font-family: Lato, sans-serif;
+    letter-spacing: 1.05px;
+}
+.rma-rendered-form .btn, .rma-rendered-form .form-control {
+    background-image: none;
+}
+.rma-rendered-form .form-control {
+    height: 34px;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+}
+.rma-rendered-form .form-control, .rma-rendered-form output {
+    font-size: 14px;
+    line-height: 1.42857143;
+    display: block;
+}
+.rma-rendered-form button, .rma-rendered-form input, .rma-rendered-form select, .rma-rendered-form textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.rma-rendered-form input {
+    line-height: normal;
+}
+.rma-rendered-form button, .rma-rendered-form input, .rma-rendered-form select, .rma-rendered-form textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.rma-rendered-form * {
+    box-sizing: border-box;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+input {
+    line-height: normal;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+.form-elements::after, .form-group::after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+h1, h3 {text-align: center;}
+ button {
+    background-color: #FF6900;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-transform: Uppercase;
+    font-weight: 600;
+    
+}
+#subBtn{
+  float: right;
+  
+}
+/**************************\
+  Basic Modal Styles
+\**************************/
+.modal {
+  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+}
+#modal-3 {
+  display: none;
+}
+#modal-3.is-open {
+  display: block;
+}
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__container {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 500px;
+  max-height: 100vh;
+  border-radius: 4px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #00449e;
+  box-sizing: border-box;
+}
+.modal__close {
+  background: transparent;
+  border: 0;
+}
+.modal__header .modal__close:before { content: "\2715"; }
+.modal__content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  color: rgba(0,0,0,.8);
+}
+.modal__btn {
+  font-size: .875rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: #e6e6e6;
+  color: rgba(0,0,0,.8);
+  border-radius: .25rem;
+  border-style: none;
+  border-width: 0;
+  cursor: pointer;
+  -webkit-appearance: button;
+  text-transform: none;
+  overflow: visible;
+  line-height: 1.15;
+  margin: 0;
+  will-change: transform;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  transition: -webkit-transform .25s ease-out;
+  transition: transform .25s ease-out;
+  transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+}
+.modal__btn:focus, .modal__btn:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.modal__btn-primary {
+  background-color: #00449e;
+  color: #fff;
+}
+/**************************\
+  Demo Animation Style
+\**************************/
+@keyframes mmfadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes mmfadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+@keyframes mmslideIn {
+  from { transform: translateY(15%); }
+    to { transform: translateY(0); }
+}
+@keyframes mmslideOut {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10%); }
+}
+.micromodal-slide {
+  display: none;
+}
+.micromodal-slide.is-open {
+  display: block;
+}
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
+  animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+.micromodal-slide[aria-hidden="false"] .modal__container {
+  animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1);
+}
+.micromodal-slide[aria-hidden="true"] .modal__overlay {
+  animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+.micromodal-slide[aria-hidden="true"] .modal__container {
+  animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
+}
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+  will-change: transform;
+}
