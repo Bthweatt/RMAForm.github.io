@@ -21,31 +21,28 @@ $(function () {
     });
   });
   // Return input values
-   
   function test(){
-  
+   let testEmail = document.getElementById('custEmail').value;
     let i =0;
     var count = document.getElementsByClassName("form-control");  
     var td = document.getElementsByClassName("td");
     for(i; i<count.length; i++){
       let count2 = document.getElementsByClassName("form-control")[i].value;
       td[i].innerText = count2;  
-      if(td[i].innerText == ""){
+      if(td[i].innerText == "")
+        {
         document.getElementsByClassName('form-control')[i].style.border = '1px solid red';
         document.getElementById('errorText').innerHTML = "Please fill out the highlighted fields!";
-  
         }
-        else{
+        else if(!testEmail.match('@'))
+        {
+                window.alert("PLEASE FILLE OUT EMAIL PROPERLY!");
+        }   
+        else
+        {
             document.getElementsByClassName('form-control')[i].style.border = '1px solid #ccc';
         }
-     /* document.getElementsByClassName('form-control')[i].addEventListener('input', function textEvent(count2){
-        let a = count2;
-          
-         document.getElementsByClassName('form-control')[a].style.border = '1px solid #ccc';
-          
-      });*/
     }  
-  
   // Trigger jsPDF prompt
   function rmagenerate() {
           var doc = new jspdf.jsPDF()
