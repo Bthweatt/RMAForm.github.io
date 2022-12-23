@@ -9,7 +9,7 @@
 
 <div class="rma-rendered-form">
   <div class="rma-inner-form">
-    <form action="phpExt.php" method="post" enctype="text/plain">
+    <form action="phpTest.php" method="get" enctype="text/plain">
     <div class="">
         <h1 access="false" id="re">j5create RMA Return Form</h1></div>
     <div class="">
@@ -69,6 +69,52 @@
       </form>
   </div>
 </div>
+
+<?php
+$name = $_GET['name'];
+echo $name,
+$date = $_GET['date'];
+
+echo $date,
+$date_of_purchase = $_GET['date_of_purchase'];
+
+echo $date_of_purchase,
+$ticket_number = $_GET['ticket_number'];
+
+echo $ticket_number,
+$reason_for_return = $_GET['reason_for_return'];
+
+echo $reason_for_return,
+$preferred_mailing_address = $_GET['preferred_mailing_address'];
+
+echo $preferred_mailing_address,
+$phone_number = $_GET['phone_number'];
+
+echo $phone_number,
+$preferred_email = $_GET['preferred_email'];
+
+echo $preferred_email,
+$vendor = $_GET['vendor'];
+
+echo $vendor,
+$sku = $_GET['sku'];
+
+echo $sku,
+$serial_number = $_GET['serial_number'];
+
+echo $serial_number;
+
+$email = test_input($_POST["email"]);
+
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
+?>
 <!-- Modal for onClick event -->
 <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
@@ -144,31 +190,3 @@
 </table>
 
 
-<?php
-
-echo $_GET['name'];
-
-// define variables and set to empty values
-$name = $date = $date_of_purchase = $ticket_number = $reason_for_return = $preferred_mailing_address = $phone_number = $preferred_email = $vendor = $sku = $serial_number = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = test_input($_POST["name"]);
-  $date = test_input($_POST["date"]);
-  $date_of_purchase = test_input($_POST["date_of_purchase"]);
-  $ticket_number = test_input($_POST["ticket_number"]);
-  $reason_for_return = test_input($_POST["reason_for_return"]);
-  $preferred_mailing_address = test_input($_POST["preferred_mailing_address"]);
-  $phone_number = test_input($_POST["phone_number"]);
-  $preferred_email = test_input($_POST["preferred_email"]);
-  $vendor = test_input($_POST["vendor"]);
-  $sku = test_input($_POST["sku"]);
-  $serial_number = test_input($_POST["serial_number"]);
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
